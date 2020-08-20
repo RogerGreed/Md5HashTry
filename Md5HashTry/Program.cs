@@ -14,8 +14,7 @@ namespace Md5HashTry
         {
             for (int i = 0; i < args.Length; i++)
             {
-                Console.Write(args[i] + ":   ");
-                Md5Hash.ComputeMD5Checksum(args[i]);
+                Console.WriteLine(args[i] + ":   " + Md5Hash.ComputeMD5Checksum(args[i]));
             }
             Console.ReadLine();
         }
