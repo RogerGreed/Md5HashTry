@@ -18,7 +18,6 @@ namespace Md5HashTryCs
                 fs.Read(fileData, 0, (int)fs.Length);
                 byte[] checkSum = md5.ComputeHash(fileData);
                 string result = BitConverter.ToString(checkSum).Replace("-", String.Empty);
-                Console.WriteLine(result);
                 return result;
             }
         }
